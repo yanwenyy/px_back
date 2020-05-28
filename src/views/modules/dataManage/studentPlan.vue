@@ -4,6 +4,7 @@
       <el-date-picker
         v-model="dataForm.years"
         type="year"
+        value-format="yyyy"
         placeholder="请选择年份">
       </el-date-picker>
       <el-select v-if="isAuth('biz:pdagency:down:list')"  clearable  v-model="dataForm.agencyId" placeholder="请选择机构">
